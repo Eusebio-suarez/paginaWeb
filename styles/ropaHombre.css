@@ -84,6 +84,12 @@ main{
 .product {
     width: 220px;
     height: 300px;
+    animation: anima 3s infinite;
+    transition: 0.2s all;
+}
+
+.product:hover{
+    animation-play-state: paused;
 }
 
 .product img {
@@ -105,3 +111,12 @@ main{
 #d8d8d8 Blanco
 #1d1d1d negro
 */
+
+@keyframes anima{
+    0%{
+
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+}
